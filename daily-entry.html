@@ -1,0 +1,12 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="css/style.css"><title>Daily Entry - SmartCanteen</title></head><body data-page="daily-entry"><div class="app"><aside id="side"></aside><main>
+<h2>Daily Entry</h2><p class="sub">Record what was cooked and served for each food item.</p>
+<div class="card"><form id="form"><div class="form">
+<div><label for="date">Date</label><input id="date" type="date" required></div>
+<div><label for="item">Food item</label><input id="item" list="items" required placeholder="e.g. Rice"><datalist id="items"></datalist></div>
+<div><label for="prep">Quantity prepared (kg)</label><input id="prep" type="number" min="0.1" step="0.1" required></div>
+<div><label for="served">Quantity served (kg)</label><input id="served" type="number" min="0" step="0.1" required></div>
+<div><label for="stu">Students served</label><input id="stu" type="number" min="0" step="1" required></div></div>
+<p class="s" id="calc"></p><button class="primary" id="sub" type="submit">Save entry</button> <button class="primary plain" id="cancel" type="button" hidden>Cancel edit</button>
+<div id="msg" class="msg"></div></form></div>
+<div class="card"><h3>Entries</h3><div class="tw"><table id="tbl"></table></div><p><button class="sm" id="more" type="button"></button></p></div>
+</main></div><script src="js/app.js"></script><script src="js/entry.js"></script></body></html>

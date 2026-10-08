@@ -1,0 +1,9 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="css/style.css"><title>Dashboard - SmartCanteen</title></head><body data-page="dashboard"><div class="app"><aside id="side"></aside><main>
+<h2>Dashboard</h2><p class="sub">Showing data for <span id="date"></span></p>
+<div class="card"><h3>Smart alerts</h3><div id="alerts"></div></div>
+<div class="grid" id="stats"></div>
+<div class="two"><div class="card"><h3>Food wasted, last 7 days (kg)</h3><div class="chart" id="chart"></div></div>
+<div class="card"><h3>High-waste food items</h3><div id="high"></div><p class="note">Share of prepared food wasted over 7 days. Red means above 10%.</p></div></div>
+<div class="card"><h3>Environmental impact</h3><div class="grid" id="impact"></div>
+<p class="note">Prototype estimates. Assumes 15% waste before the system, 300 litres of water and 2.5 kg CO2e per kg of food wasted. Illustrative values, not measurements.</p></div>
+</main></div><script src="js/app.js"></script><script src="js/dashboard.js"></script></body></html>
